@@ -5,25 +5,7 @@ import {
   changeFilterInput,
 } from "./actions";
 
-const contacts = [
-  {
-    id: 1662110650283,
-    name: "Denis Sychov",
-    number: "11111111111",
-  },
-  {
-    id: 1662110747927,
-    name: "Polina Sychova",
-    number: "324060",
-  },
-  {
-    id: 1662277512037,
-    name: "Viktoriia",
-    number: "654984321",
-  },
-];
-
-const contactsReducer = createReducer(contacts, {
+const contactsReducer = createReducer([], {
   [addContactAction]: (state, action) =>
     state.find((c) => c.name === action.payload.name)
       ? alert(`Sorry! Contact ${action.payload.name} already exists!`)

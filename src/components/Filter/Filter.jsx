@@ -1,6 +1,5 @@
 import React from "react";
 import { StyledInput } from "./Filter.styled";
-// import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
 import { changeFilterInput } from "components/redux/actions";
 
@@ -18,15 +17,9 @@ export function Filter() {
       <StyledInput
         type="text"
         name="query"
-        // value={value}
         onChange={inputChangeHandler}
         id="query"
       />
     </>
   );
 }
-
-// Filter.propTypes = {
-//   onChange: PropTypes.func.isRequired,
-//   value: PropTypes.string.isRequired,
-// };

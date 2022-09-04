@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { StyledForm, StyledButton } from "./ContactForm.styled";
-// import PropTypes from "prop-types";
 import styles from "../../index.module.css";
 import { useDispatch } from "react-redux";
 import { addContactAction } from "components/redux/actions";
@@ -66,14 +65,3 @@ export function ContactForm() {
     </StyledForm>
   );
 }
-
-// ContactForm.propTypes = {
-//   onSubmit: PropTypes.func.isRequired,
-//   contactsRef: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.number.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     })
-//   ).isRequired,
-// };

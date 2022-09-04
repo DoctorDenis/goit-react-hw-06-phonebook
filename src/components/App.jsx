@@ -4,17 +4,6 @@ import { Filter } from "./Filter/Filter";
 // import { useState, useEffect } from "react";
 
 export default function App() {
-  // const [contacts, setContacts] = useState(
-  //   JSON.parse(localStorage.getItem("contacts"))
-  //     ? [...JSON.parse(localStorage.getItem("contacts"))]
-  //     : []
-  // );
-  // const [filter, setFilter] = useState("");
-
-  // useEffect(() => {
-  //   localStorage.setItem("contacts", JSON.stringify(contacts));
-  // }, [contacts]);
-
   return (
     <div>
       <h1>Phonebook</h1>
